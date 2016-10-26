@@ -3,14 +3,16 @@
 <head>
 	<title>IMGUR IMGS</title>
 	<link rel="stylesheet" type="text/css" href="/lib/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="/styles/main.css"/>
+
 </head>
 <body>
 <h1>IMGUR IMGS</h1>
 	<div class="panel panel-default search-bar col-xs-offset-3">
   		<div class="panel-body">
     		<input class="form-control" type="text" id="imgur-search" placeholder="get me IMGURS"/>
-    		<button type="button" class="btn btn-primary btn-lg" id="clicky-button">Find 'em</button>
+    		<button type="button" class="btn btn-primary btn-lg" id="clicky-button"  data-loading-text='<i class="fa fa-circle-o-notch fa-spin" aria-hidden="true"></i>'>Find 'em</button>
   		</div>
 	</div>
 	<div id="output"></div>

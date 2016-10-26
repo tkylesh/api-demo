@@ -37,16 +37,19 @@ let imageList = (searchText) => {
 
 $(document).ready(function() {
 
-
 	$('#clicky-button').on('click',() =>{
-		$('#output').innerHTML= '';
+		$('#clicky-button').button('loading');
+		$('#output').html("");
 		let searchy = $('#imgur-search').val();
 		console.log('its working', searchy);
 
 		imageList(searchy).then((dataFromImgur)=>{
+			$('#clicky-button').button('reset');
 			console.log('data from imgur: ',dataFromImgur);
 			dataFromImgur.forEach((image) => {
 				$('#output').append(`<img src='${image.link}'>`);
+			}).catch((error) => {
+				$('#clicky-button').button('reset');
 			});
 		});
 	});

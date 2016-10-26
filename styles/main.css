@@ -6,3 +6,10 @@ body h1 {
   width: 50%;
   background-color: pink;
   text-align: center; }
+
+#output img {
+  height: 100px;
+  width: 100px;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 100%; }
