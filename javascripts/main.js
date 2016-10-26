@@ -39,6 +39,7 @@ $(document).ready(function() {
 
 
 	$('#clicky-button').on('click',() =>{
+		$('#output').innerHTML= '';
 		let searchy = $('#imgur-search').val();
 		console.log('its working', searchy);
 
